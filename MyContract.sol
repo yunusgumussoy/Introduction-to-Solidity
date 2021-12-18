@@ -1,9 +1,14 @@
+// SPDX-License-Identifier: MIT
+// Yunus GUMUSSOY - The First Step of Being a Blockchain Developer
+
 pragma solidity ^0.4.18;
 
 contract MyContract {
     address owner;
 
-    function MyContract() public {
+    // for newer versions contract name cannot be same with function name
+    // function MyContract() public {
+    function MyNewContract() public {
         owner = msg.sender;
     }
 
